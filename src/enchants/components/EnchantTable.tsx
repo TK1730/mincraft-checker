@@ -9,12 +9,8 @@ export default function EnchantTable({ enchants }: { enchants: Enchant[] }) {
         Object.fromEntries(enchants.map(e => [e.getId(), e.isOwned()]))
     );
     const [sortedEnchants, setSortedEnchants] = useState<Enchant[]>(enchants);
-
     useEffect(() => {
-        // own状態（darkStates）が変わるたびにソート
-        setSortedEnchants(
-            [...enchants].sort((a, b) => Number(darkStates[a.getId()]) - Number(darkStates[b.getId()]))
-        );
+        setSortedEnchants(EnchantSorter.byOwnedLast(enchants, darkStates));
     }, [enchants, darkStates]);
 
     const handleClick = (id: string) => {

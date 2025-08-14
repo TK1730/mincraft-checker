@@ -21,7 +21,7 @@ export default class EnchantSorter {
     }
 
     // 所持していないものを最初、しているものを後にする
-    static byOwnedLast(list: Enchant[]): Enchant[] {
-        return [...list].sort((a, b) => Number(a.getId()) - Number(b.getId()));
+    static byOwnedLast(list: Enchant[], states: Record<string, boolean>): Enchant[] {
+        return [...list].sort((a, b) => Number(states[a.getId()]) - Number(states[b.getId()]));
     }
 }
