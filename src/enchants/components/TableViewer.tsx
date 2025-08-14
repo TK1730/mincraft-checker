@@ -1,20 +1,11 @@
-import { useState } from 'react';
-import {enchantList} from '../logic/DataManegement';
-import EnchantTable from './EnchantTable';
+import { useState, useEffect } from "react";
+import EnchantTable from "./EnchantTable";
+import { enchantList } from "../logic/DataManegement";
 
-export default function Check() {
-    return (
-    <div>
-        <table>
-            <thead>
-                <tr>
-                    <th>所持</th>
-                    <th>エンチャント名</th>
-                    <th>理論値</th>
-                </tr>
-            </thead>
-        </table>
-        <EnchantTable enchants={enchantList.map(enchant => enchant)} />
-    </div>
-    )
+// Enchantにowned属性がある前提
+export default function TableViewer() {
+  // owned状態を配列で管理
+  return (
+    <EnchantTable enchants={enchantList} />
+  )
 }

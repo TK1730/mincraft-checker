@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import TableViewer from './enchants/components/TableViewer';
+import { enchantList } from './enchants/logic/DataManegement';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

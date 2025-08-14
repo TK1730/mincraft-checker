@@ -7,7 +7,8 @@ export class Enchant {
         private id: string,
         private jp: string,
         private maxLevel: number,
-        private treasure: boolean
+        private treasure: boolean,
+        private own: boolean,
     ) {
         if (id !== undefined && id.trim() === "") {
             throw new Error("Invalid id. It must not be empty.");
@@ -24,6 +25,7 @@ export class Enchant {
     getJapanese(): string {return this.jp}
     getMaxLevel(): number {return this.maxLevel}
     isTreasure(): boolean {return this.treasure}
+    isOwned(): boolean {return this.own}
     /**
      * 数字をローマ数字に変換するメソッド
      * @returns ローマ数字
@@ -43,5 +45,5 @@ export class Enchant {
 }
 
 export const enchantList: Enchant[] = enchantInfos.map(enchant =>
-  new Enchant(enchant.id, enchant.jp, enchant.maxLevel, enchant.treasure)
+  new Enchant(enchant.id, enchant.jp, enchant.maxLevel, enchant.treasure, false)
 )

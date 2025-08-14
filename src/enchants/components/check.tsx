@@ -2,18 +2,25 @@ import React, { useState } from "react";
 import { Enchant } from '../logic/DataManegement';
 
 
-export default function ClickableImage({ src, alt }: { src: string; alt?: string }) {
-    const [dark, setDark] = useState(true);
+interface ClickableImageProps {
+    src: string;
+    alt?: string;
+    onClick?: () => void;
+    dark: boolean;
+    key?: string; // 追加: keyプロパティをオプションとして定義
+}
 
+export default function ClickableImage({ src, alt, onClick, dark, key }: ClickableImageProps) {
     return (
         <img
+            key={key}
             src={src}
             alt={alt}
             style={{
                 filter: dark ? "brightness(0.5)" : "none",
                 cursor: "pointer"
             }}
-            onClick={() => setDark(d => !d)}
+            onClick={onClick}
         />
     );
 }
