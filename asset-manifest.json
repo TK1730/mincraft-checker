@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/mincraft-checker/static/css/main.2c3df75b.css",
-    "main.js": "/mincraft-checker/static/js/main.b5d2a62b.js",
+    "main.js": "/mincraft-checker/static/js/main.be8f77a3.js",
     "static/js/453.03449a97.chunk.js": "/mincraft-checker/static/js/453.03449a97.chunk.js",
     "index.html": "/mincraft-checker/index.html",
     "main.2c3df75b.css.map": "/mincraft-checker/static/css/main.2c3df75b.css.map",
-    "main.b5d2a62b.js.map": "/mincraft-checker/static/js/main.b5d2a62b.js.map",
+    "main.be8f77a3.js.map": "/mincraft-checker/static/js/main.be8f77a3.js.map",
     "453.03449a97.chunk.js.map": "/mincraft-checker/static/js/453.03449a97.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2c3df75b.css",
-    "static/js/main.b5d2a62b.js"
+    "static/js/main.be8f77a3.js"
   ]
 }
