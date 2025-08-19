@@ -28,7 +28,7 @@ export default function EnchantTable({ enchants }: { enchants: Enchant[] }) {
     }
 
     // 所持状態でソート
-    const sortedEnchants = EnchantSorter.byJapanese(enchants);
+    const sortedEnchants = EnchantSorter.byOwnedLast(enchants, ownedIds);
 
     return (
         <table className="EnchantTable">
