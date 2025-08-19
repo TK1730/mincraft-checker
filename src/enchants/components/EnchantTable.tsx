@@ -1,4 +1,4 @@
-import { useState, useEffect, use } from "react";
+import { useState, useEffect } from "react";
 import { Enchant } from "../logic/DataManegement"
 import ClickableImage from "./check"
 import enchantBook_icon from '../assets/enchantBook.png'

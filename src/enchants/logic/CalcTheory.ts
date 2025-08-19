@@ -1,5 +1,3 @@
-import { Enchant } from "./DataManegement";
-
 export default class CalcTheory {
     private theoryValues = [5, 8, 11, 14, 17];  // 理論値の配列
     constructor(private maxLevel: number) {

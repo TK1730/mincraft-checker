@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import EnchantTable from "./EnchantTable";
 import { enchantList } from "../logic/DataManegement";
 
