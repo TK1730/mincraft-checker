@@ -1,7 +1,3 @@
-import React, { useState } from "react";
-import { Enchant } from '../logic/DataManegement';
-
-
 interface ClickableImageProps {
     src: string;
     alt?: string;
