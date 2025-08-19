@@ -1,46 +1,43 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# エンチャント本チェッカー
 
-## Available Scripts
+## 概要
+マインクラフトのエンチャント本の所持状況を管理できるWebチェッカーツールです。
+司書ガチャやエンチャント収集の進捗管理に便利です。
 
-In the project directory, you can run:
+## 主な機能
+- エンチャント本の一覧表示（日本語名・ローマ数字・理論値）
+- 本アイコンをクリックで「所持済み」状態を切り替え
+- 所持済みの本は自動で上にソート
+- 所持状態はローカルストレージに保存され、リロードしても保持
+- ゲームサイト風の見やすいデザイン
 
-### `yarn start`
+## 使い方
+1. ページ上部の説明を確認してください。
+2. テーブルの本アイコンをクリックすると、そのエンチャント本が「所持済み」としてマークされます。
+3. 所持済みの本は自動で上に並び替わります。
+4. 再度クリックすると「未所持」に戻ります。
+5. 所持状態はブラウザに保存されるため、リロードしても消えません。
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 技術構成
+- React + TypeScript
+- CSS（ゲームサイト風デザイン）
+- ローカルストレージによる永続化
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## フォルダ構成例
+```
+src/
+	enchants/
+		components/   // UIコンポーネント
+		logic/        // データ・ロジック
+		styles/       // CSS
+	index.tsx       // エントリポイント
+	index.css       // 全体スタイル
+```
 
-### `yarn test`
+## 注意事項
+- 所持状態はブラウザごとに保存されます。他のPCやブラウザでは共有されません。
+- データはローカルのみで管理され、サーバーには送信されません。
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## ライセンス
+MIT
