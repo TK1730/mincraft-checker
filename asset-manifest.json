@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.2c3df75b.css",
-    "main.js": "/static/js/main.6942db14.js",
-    "static/js/453.03449a97.chunk.js": "/static/js/453.03449a97.chunk.js",
-    "index.html": "/index.html",
-    "main.2c3df75b.css.map": "/static/css/main.2c3df75b.css.map",
-    "main.6942db14.js.map": "/static/js/main.6942db14.js.map",
-    "453.03449a97.chunk.js.map": "/static/js/453.03449a97.chunk.js.map"
+    "main.css": "/mincraft-checker/static/css/main.2c3df75b.css",
+    "main.js": "/mincraft-checker/static/js/main.b5d2a62b.js",
+    "static/js/453.03449a97.chunk.js": "/mincraft-checker/static/js/453.03449a97.chunk.js",
+    "index.html": "/mincraft-checker/index.html",
+    "main.2c3df75b.css.map": "/mincraft-checker/static/css/main.2c3df75b.css.map",
+    "main.b5d2a62b.js.map": "/mincraft-checker/static/js/main.b5d2a62b.js.map",
+    "453.03449a97.chunk.js.map": "/mincraft-checker/static/js/453.03449a97.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2c3df75b.css",
-    "static/js/main.6942db14.js"
+    "static/js/main.b5d2a62b.js"
   ]
 }
