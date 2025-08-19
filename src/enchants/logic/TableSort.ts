@@ -15,13 +15,13 @@ export default class EnchantSorter {
         return [...list].sort((a, b) => b.getMaxLevel() - a.getMaxLevel())
     }
 
-    // 所持しているものを最初、していないものを後にする
-    static byOwnedFirst(list: Enchant[]): Enchant[] {
-        return [...list].sort((a, b) => Number(b.isOwned()) - Number(a.isOwned()));
+    // 所持しているものを最初、していないものを後にする（ownedIdsで判定）
+    static byOwnedFirst(list: Enchant[], ownedIds: string[]): Enchant[] {
+        return [...list].sort((a, b) => Number(ownedIds.includes(b.getId())) - Number(ownedIds.includes(a.getId())));
     }
 
     // 所持していないものを最初、しているものを後にする
-    static byOwnedLast(list: Enchant[], states: Record<string, boolean>): Enchant[] {
-        return [...list].sort((a, b) => Number(states[a.getId()]) - Number(states[b.getId()]));
+    static byOwnedLast(list: Enchant[], ownedIds: string[]): Enchant[] {
+        return [...list].sort((a, b) => Number(ownedIds.includes(a.getId())) - Number(ownedIds.includes(b.getId())));
     }
 }

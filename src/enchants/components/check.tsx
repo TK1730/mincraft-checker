@@ -17,7 +17,7 @@ export default function ClickableImage({ src, alt, onClick, dark, key }: Clickab
             src={src}
             alt={alt}
             style={{
-                filter: dark ? "brightness(0.5)" : "none",
+                filter: dark ? "none" : "brightness(0.5)",
                 cursor: "pointer"
             }}
             onClick={onClick}

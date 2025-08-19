@@ -11,7 +11,18 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <TableViewer />
+    <div className="checker-root">
+      <header className="checker-header">
+        <h1 className="checker-title">エンチャント本チェッカー</h1>
+        <p className="checker-desc">
+          このツールはマインクラフトのエンチャント本の所持状況を管理できるチェッカーです。<br />
+          テーブルの本アイコンをクリックすると「所持済み」としてマークされ、一覧が自動で並び替わります。<br />
+          各エンチャントの日本語名・ローマ数字・理論値も一目で確認できます。<br />
+          <span className="checker-note">※データはブラウザ上のみで管理されます。リロードで状態はリセットされます。</span>
+        </p>
+      </header>
+      <TableViewer />
+    </div>
   </React.StrictMode>
 );
 
